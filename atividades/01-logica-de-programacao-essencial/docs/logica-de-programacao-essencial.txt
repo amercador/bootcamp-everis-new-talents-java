@@ -1,0 +1,10 @@
+Lógica de Programação Essencial
+*******************************
+Prof.: Denilson Bonatti
+
+
+Introdução à lógica e à programação
+===================================
+
+Entendendo o que é lógica
+-------------------------
