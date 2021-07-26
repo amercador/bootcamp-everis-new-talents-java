@@ -1,0 +1,94 @@
+Criando seu Primeiro Repositório no GitHub Para Compartilhar Seu Progresso
+**************************************************************************
+
+Introdução e apresentação do projeto
+====================================
+Professor Venilton Falvo Jr (Tech Lead na DIO);
+Formado em Engenharia da Computação
+Mestrado em Engenharia de Software
+Estagio na Cast Group como Desenvolvedor Java e .Net
+Desenvolvimento móvel em Android
+
+* LinkedIn: https://linkedin.com/in/falvojr
+* GitHub: https://github.com/falvojr 
+
+DESCRIÇÃO
+Reforce seu conhecimento em Git com um desafio totalmente prático, onde você executará todos os passos para a criação, atualização e sincronização de um repositório no GitHub. Com isso, você poderá compartilhar suas anotações e exercícios em seu próprio repositório. Criando assim, o primeiro (de muitos) projetos do seu portfólio.
+
+
+Git e Github: Relembrando algumas coisinhas
+===========================================
+- Vamos criar um repositório novo no Github:
+-- Repository name: dio-desafio-github-primeiro-repositorio;
+-- Description: Repositório criado para o desafio de projeto;
+-- Public
+-- Add a README file (página inicial do repositório, onde colocaremos algumas considerações iniciais, anotações, links úteis e coisas relacionadas ao que representa aquele repositório pra gente;
+-- Add .gitignore - arquivo que faz com que o git ignore arquivos que não sejam essencial para o versionamento do código (nesse momento não iremos usar o gitignore);
+-- Create repository
+
+- Vamos editar o arquivo README:
+Obs: o README tem a extensão md (markdown). Para mais informações sobre MarkDown em markdownguide.org/basic-syntax/
+-- vamos clicar no ícone do lápis e colocar a informação:
+--- # Desafio de Projeto sobre Git/GitHub da DIO;
+--- ## Link Úteis
+	[Sintaxe Basica Markdown](https://www.markdownguide.org/basic-syntax/) //esse comando irá criar um link
+-- vamos dar um preview clicando no ícone do olho para visualizar a alteração feita no arquivo README; 
+-- vamos clicar no botão Commit changes para gravar as alterações no arquivo README;
+
+- Vamos pegar as informação do repositório(remoto) para cloná-lo na máquina(local):
+-- vamos clicar no botão verde Code:
+--- temos a opção de copiar o link(pode ser no formato http / ssh(caso tenha uma chave ssh cadastrada e não precisar digitar as credenciais a todo momento) / GithubClub do repositório ou baixar o arquivo no formato zip
+
+- Vamos abrir um terminal na pasta que queremos clonar o repositório para dentro;
+- No terminal vamos digitar os comandos abaixo:
+git clone (vamos colar o endereço que copiamos(clonamos) do Github);
+
+Ex: git clone git@github.com:amercador/dio-desafio-github-primeiro-repositorio.git //nesse caso usando o link (ssh)
+
+Obs: caso seja a primeira que esteja usando o gitBash(terminal do git no windows), será aberto uma aba do navegador, solicitando o login na página do GitHub para "atrelar" o repositório local no remoto. Caso esteja no Linux, ele pedirá o usuário e senha;
+
+Ao clonar o repositório do Github para a pasta local, repare que foi criada uma pasta com o nome do projeto remoto e dentro dele uma outra pasta oculta com o nome .git e o arquivo README.md;
+
+- Pelo terminal, vamos entrar no diretório clonado;
+cd nome-do-diretorio
+
+- Vamos verificar o status do diretório executando o comando abaixo:
+git status
+
+- Vamos criar uma pasta dentro do diretório executando o comando abaixo:
+mkdir introducao-ao-git-github
+
+- Vamos criar um arquivo texto dentro do diretorio com o nome de anotacoes.txt;
+-- Vamos incluir os textos:
+Link para download do Git: https://git-scm.com/downloads 
+
+O Git Bash é um terminal estendido para otimizar o uso do Git. 
+
+- No terminal, vamos dar um git status e repare que o git identificou uma nova pasta criada dentro do diretorio que foi clonado;  
+- Vamos dar um git add . ou -A para que essas modificações que foram criadas no repositório local sejam refletidas para o diretório remoto;
+- Vamos colocar uma informação dizendo o que se trata essa alteração feita no repositório através do comando:
+git commit -m "Inclusão das anotações do curso de Git/Github"
+- Vamos enviar essas alterações para o repositório através do comando:
+git push origin master ou main (depende da branch usada)
+- Vamos dar um f5 no Github e verifique que a pasta que enviamos para a núvem já estará aparecendo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
